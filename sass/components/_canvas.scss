@@ -1,0 +1,16 @@
+.wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    padding-top:5rem;
+    .inner{
+        background-color: black;
+        padding-bottom:6px;
+        #mainCanvas{
+            margin-left:auto;
+            margin-right:auto;
+        }
+    }
+   
+}

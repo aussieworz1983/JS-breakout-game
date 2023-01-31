@@ -1,0 +1,70 @@
+*,
+* ::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(2rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-2rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem); }
+  80% {
+    transform: translateY(-3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+/*
+0-600px phone
+600-900px tab portrait
+900-1200px tab land
+1200 - 1800 normal
+1000px + big desktop
+args :
+-phone
+-tab-port
+-tab-land
+-big-desktop
+1em 16px
+
+order@base typo general layout page components
+*/
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 5rem; }
+  .wrapper .inner {
+    background-color: black;
+    padding-bottom: 6px; }
+    .wrapper .inner #mainCanvas {
+      margin-left: auto;
+      margin-right: auto; }
